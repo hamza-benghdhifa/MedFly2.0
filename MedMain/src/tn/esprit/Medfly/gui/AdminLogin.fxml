@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="691.0" prefWidth="1031.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="edu.esprit.medfly.gui.AdminLoginController">
+   <children>
+      <AnchorPane prefHeight="691.0" prefWidth="369.0" style="-fx-background-color: #99CDD8;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="665.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Admin-Pr.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="adname" layoutX="628.0" layoutY="391.0" prefHeight="25.0" prefWidth="224.0" />
+      <TextField fx:id="adpass" layoutX="628.0" layoutY="478.0" prefHeight="25.0" prefWidth="224.0" />
+      <Label layoutX="433.0" layoutY="395.0" prefHeight="17.0" prefWidth="132.0" text="Nom" />
+      <Label layoutX="433.0" layoutY="482.0" text="Mot de passe" />
+      <Button layoutX="674.0" layoutY="560.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="25.0" prefWidth="132.0" text="LogIn" />
+      <Label fx:id="adlab" layoutX="674.0" layoutY="615.0" prefHeight="17.0" prefWidth="344.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="711.0" prefWidth="1031.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.Medfly.gui.SignInController">
+   <children>
+      <AnchorPane prefHeight="711.0" prefWidth="369.0" style="-fx-background-color: #99CDD8;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="78.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@symbol-of-caduceus.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Label layoutX="554.0" layoutY="335.0" prefHeight="17.0" prefWidth="71.0" text="Email" />
+      <Label layoutX="554.0" layoutY="406.0" text="mot de passe" />
+      <TextField fx:id="inputmail" layoutX="679.0" layoutY="331.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="inputMotdePasse" layoutX="678.0" layoutY="402.0" prefHeight="25.0" prefWidth="184.0" />
+      <Button layoutX="613.0" layoutY="478.0" mnemonicParsing="false" onAction="#loginMed" prefHeight="35.0" prefWidth="131.0" text="Login" />
+      <Label fx:id="Emaillabel" layoutX="678.0" layoutY="368.0" prefHeight="17.0" prefWidth="339.0" />
+      <Label fx:id="MotLabel" layoutX="678.0" layoutY="438.0" prefHeight="17.0" prefWidth="339.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="683.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@doc.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="561.0" layoutY="513.0" mnemonicParsing="false" onAction="#medsign" prefHeight="25.0" prefWidth="241.0" style="-fx-background-color: transparent;" text="SignUp" textFill="#f20909" />
+   </children>
+</AnchorPane>

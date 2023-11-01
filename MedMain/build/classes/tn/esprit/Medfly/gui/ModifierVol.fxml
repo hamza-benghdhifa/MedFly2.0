@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="711.0" prefWidth="1031.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.Medfly.gui.ModifierVolController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="-11.0" prefHeight="722.0" prefWidth="431.0" style="-fx-background-color: #99CDD8;" />
+      <TextField fx:id="txtidV" editable="false" layoutX="760.0" layoutY="53.0" prefHeight="31.0" prefWidth="77.0" promptText="ID Vol" />
+      <TextField fx:id="txtNom1" layoutX="750.0" layoutY="194.0" />
+      <Label layoutX="602.0" layoutY="199.0" text="Nom du compagnie : " />
+      <TextField fx:id="txtNombre1" layoutX="737.0" layoutY="289.0" />
+      <TextField fx:id="txtPrix1" layoutX="729.0" layoutY="361.0" />
+      <TextField fx:id="txtDepart1" layoutX="737.0" layoutY="442.0" />
+      <TextField fx:id="txtDestination1" layoutX="729.0" layoutY="512.0" />
+      <Button layoutX="750.0" layoutY="576.0" mnemonicParsing="false" onAction="#ModifierVol" text="Modifier" />
+      <Label layoutX="595.0" layoutY="283.0" text="Nombre de billets :" />
+      <Label layoutX="602.0" layoutY="366.0" text="Prix du billet : " />
+      <Label layoutX="603.0" layoutY="447.0" text="Date de depart : " />
+      <Label layoutX="608.0" layoutY="517.0" text="Destination :" />
+      <Button layoutX="576.0" layoutY="599.0" mnemonicParsing="false" onAction="#RetourModifierVol" text="Retour" />
+   </children>
+</AnchorPane>

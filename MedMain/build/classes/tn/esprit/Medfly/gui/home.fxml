@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="711.0" prefWidth="1031.0" style="-fx-background-color: #99CDD8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.Medfly.gui.HomeController">
+   <children>
+      <Button layoutX="619.0" layoutY="405.0" mnemonicParsing="false" onAction="#ghotel" prefHeight="49.0" prefWidth="270.0" text="Gestion d'Hotel" />
+      <Button layoutX="122.0" layoutY="405.0" mnemonicParsing="false" onAction="#gvol" prefHeight="49.0" prefWidth="263.0" text="Gestion de vols" />
+      <ImageView fitHeight="256.0" fitWidth="347.0" layoutX="83.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Flights-small-640x480.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="247.0" fitWidth="390.0" layoutX="546.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Hotel-enseigne-neon-630x405-C-Thinkstock.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
