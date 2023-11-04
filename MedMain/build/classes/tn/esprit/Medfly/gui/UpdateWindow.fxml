@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="getIdentifiant" prefHeight="353.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TableView.UpdateWindowController">
+   <children>
+      <ImageView fitHeight="379.0" fitWidth="852.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/image6.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#SwitchToAjouter" style="-fx-background-color: grey;" text="Retour" textFill="WHITE" />
+      <Label layoutX="361.0" layoutY="14.0" text="MODIFIER CATEGORIE" textFill="#00ecff">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <Label fx:id="label" layoutX="503.0" layoutY="127.0" text="Disponibilité:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="506.0" layoutY="207.0" text="Ref_Services:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="577.0" layoutY="281.0" text="Date:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <TextField fx:id="txtMNom" layoutX="314.0" layoutY="129.0" promptText="Entrer un nouveau nom " />
+      <TextField fx:id="txtMdescription" layoutX="314.0" layoutY="209.0" promptText="Entrer une description" />
+      <TextField fx:id="txtMTarif" layoutX="314.0" layoutY="282.0" promptText="Montant" />
+      <RadioButton fx:id="Butt_Disponible" layoutX="647.0" layoutY="133.0" mnemonicParsing="false" onAction="#getdispon" text="Disponible" textFill="#eeeeee" />
+      <RadioButton fx:id="Butt_Indisponible" layoutX="738.0" layoutY="133.0" mnemonicParsing="false" onAction="#getdispon" text="Indisponible" textFill="#ebebeb" />
+      <ComboBox fx:id="ChoiceBox" layoutX="651.0" layoutY="205.0" onAction="#selection" prefHeight="25.0" prefWidth="174.0" />
+      <DatePicker fx:id="mod_date" layoutX="651.0" layoutY="283.0" onAction="#getMod_date" />
+      <Button fx:id="update" layoutX="468.0" layoutY="336.0" mnemonicParsing="false" onAction="#Update" style="-fx-background-color: grey;" text="Confirmer" textFill="WHITE" />
+      <Label layoutX="239.0" layoutY="64.0" text="Id:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <TextField fx:id="identifiant" layoutX="314.0" layoutY="60.0" promptText="Entrer un id" />
+      <Label layoutX="152.0" layoutY="127.0" text="Nom_Service:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="207.0" text="Description:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="281.0" text="Tarification:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

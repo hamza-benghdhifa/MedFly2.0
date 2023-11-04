@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorme" prefHeight="618.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.Medfly.controller.AjouterreclamationController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="381.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../utilites/rec.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="descriptionrec" layoutX="353.0" layoutY="415.0" onKeyPressed="#handlebadword" promptText="description" stylesheets="@../values/style.css">
+         <styleClass>
+            <String fx:value="search-box" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="emailrec" layoutX="353.0" layoutY="347.0" promptText="email" stylesheets="@../values/style.css">
+         <styleClass>
+            <String fx:value="search-box" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <Button layoutX="456.0" layoutY="483.0" mnemonicParsing="false" onAction="#annulerreclamation" prefHeight="34.0" prefWidth="150.0" style="-fx-background-color: #1a1750;" stylesheets="@../values/style.css" text="Annuler" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="add-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+      <Button layoutX="286.0" layoutY="483.0" mnemonicParsing="false" onAction="#ajouterreclamation" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #1a1750;" stylesheets="@../values/style.css" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="add-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+      <Label layoutX="-9.0" prefHeight="83.0" prefWidth="885.0" style="-fx-background-color: #63c29c;" text="                              Ajouter Réclamation" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="42.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="118.0" fitWidth="174.0" layoutX="-2.0" layoutY="-4.0">
+         <image>
+            <Image url="@../../../utilites/logo.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="sujetrec" layoutX="353.0" layoutY="294.0" prefHeight="31.0" prefWidth="187.0">
+         <styleClass>
+            <String fx:value="search-box" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </ComboBox>
+   </children>
+   <styleClass>
+      <String fx:value="fruit-item" />
+      <String fx:value="shadow" />
+   </styleClass>
+   <stylesheets>
+      <URL value="@../values/style.css" />
+      <URL value="@../../../utilites/style.css" />
+   </stylesheets>
+</AnchorPane>

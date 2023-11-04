@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane id="AnchorPane" prefHeight="235.0" prefWidth="431.0" styleClass="BG" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TableView.MediaPlayerController">
+   <children>
+      <ImageView fitHeight="352.0" fitWidth="586.0" layoutX="-3.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/image5.PNG" />
+         </image>
+      </ImageView>
+      <MediaView fx:id="mv" fitHeight="200.0" fitWidth="300.0" layoutX="42.0" layoutY="39.0" AnchorPane.bottomAnchor="147.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="244.0" AnchorPane.topAnchor="39.0" />
+      <HBox layoutX="3.0" layoutY="300.0" prefHeight="0.0" prefWidth="586.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="-3.0" />
+      <Button fx:id="playy" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#play" text="Play" />
+      <Button fx:id="stopp" layoutX="74.0" layoutY="361.0" mnemonicParsing="false" onAction="#stop" text="Stop" />
+      <ComboBox fx:id="regarder" layoutX="436.0" layoutY="14.0" onAction="#regarde" prefWidth="150.0" promptText="selectionner" />
+      <Button fx:id="ret" layoutX="531.0" layoutY="349.0" mnemonicParsing="false" onAction="#recule" text="Retour" />
+   </children>
+</AnchorPane>

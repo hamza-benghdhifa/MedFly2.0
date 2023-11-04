@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="711.0" prefWidth="1031.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.Medfly.gui.FirstPageMedFlyController">
+   <children>
+      <AnchorPane prefHeight="711.0" prefWidth="369.0" style="-fx-background-color: #99CDD8;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="98.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Admin-Pr.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="124.0" layoutY="523.0" text="ADMIN">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Button layoutX="94.0" layoutY="346.0" mnemonicParsing="false" onAction="#TOADMIN" opacity="0.0" prefHeight="150.0" prefWidth="157.0" />
+         </children></AnchorPane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="441.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@doc.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="776.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@patient.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="438.0" layoutY="348.0" mnemonicParsing="false" onAction="#ToMed" opacity="0.0" prefHeight="150.0" prefWidth="157.0" text="Button" />
+      <Button layoutX="773.0" layoutY="348.0" mnemonicParsing="false" onAction="#ToPat" opacity="0.0" prefHeight="150.0" prefWidth="157.0" text="Button" />
+      <Label layoutX="445.0" layoutY="524.0" prefHeight="38.0" prefWidth="149.0" text="MEDECIN" textFill="#368a42">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="802.0" layoutY="529.0" prefHeight="17.0" prefWidth="124.0" text="PATIENT" textFill="#3d8a35">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="520.0" layoutY="32.0" prefHeight="135.0" prefWidth="354.0" text="MEDFLY" textFill="#ff0f0f">
+         <font>
+            <Font name="System Italic" size="92.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
