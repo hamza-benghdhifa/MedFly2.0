@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" stylesheets="@loginstyle.css"  prefHeight="569.0" prefWidth="695.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="tn.esprit.Medfly.gui.ConsulterMedecinController">
+   <children>
+       <ScrollPane fitToWidth="true" prefHeight="569.0" prefWidth="695.0">
+           <content>
+               <TilePane fx:id="medecinTilePane" hgap="10" prefColumns="3"  styleClass="my-tableview" tileAlignment="TOP_LEFT" vgap="10" />
+           </content>
+       </ScrollPane>
+   </children>  
+</AnchorPane>

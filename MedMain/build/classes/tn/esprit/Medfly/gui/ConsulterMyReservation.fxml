@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.Medfly.gui.ConsulterMyReservationController">
+   <children>
+      <ImageView fitHeight="464.0" fitWidth="299.0" layoutY="49.0" pickOnBounds="true">
+         <image>
+            <Image url="@téléchargement.png" />
+         </image>
+      </ImageView>
+      <HBox prefHeight="50.0" prefWidth="299.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="b1" mnemonicParsing="false" onAction="#Supprimer" prefHeight="44.0" prefWidth="112.0" style="-fx-background-color: black;" text="Supprimer" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="b2" mnemonicParsing="false" onAction="#Modifier" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: black;" text="Modifier" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="b3" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: black;" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <TableView fx:id="table" layoutX="299.0" prefHeight="513.0" prefWidth="464.0">
+        <columns>
+          <TableColumn fx:id="date" prefWidth="123.0" text="Date Reservation" />
+          <TableColumn fx:id="nomMedecin" prefWidth="124.0" text="Medecin" />
+            <TableColumn fx:id="Pays" prefWidth="72.0" text="Pays" />
+            <TableColumn fx:id="payement" text="Payement" />
+        </columns>
+      </TableView>
+      <TextField fx:id="r1" onKeyPressed="#handleSearch" layoutX="-2.0" layoutY="42.0" prefHeight="31.0" prefWidth="299.0" promptText="Rechercher..." />
+   </children>
+</AnchorPane>

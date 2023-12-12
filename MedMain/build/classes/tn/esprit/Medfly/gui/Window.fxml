@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="MyChoiceBox" prefHeight="381.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TableView.WindowController">
+   <children>
+      <ImageView fitHeight="483.0" fitWidth="941.0" layoutX="-14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/image6.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="MyLabel" layoutX="576.0" layoutY="100.0" text="D:" />
+      <Label fx:id="MyLabel1" layoutX="575.0" layoutY="174.0" text="R:" />
+      <Label fx:id="date_label" layoutX="625.0" layoutY="245.0" text="D:" />
+      <RadioButton fx:id="Button_Disponible" layoutX="674.0" layoutY="94.0" mnemonicParsing="false" onAction="#getDispo" text="Disponible">
+         <toggleGroup>
+            <ToggleGroup fx:id="dispo" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="Button_Indisponible" layoutX="773.0" layoutY="94.0" mnemonicParsing="false" onAction="#getDispo" text="Indisponible" toggleGroup="$dispo" />
+      <DatePicker fx:id="Mydat" layoutX="703.0" layoutY="237.0" onAction="#getDate" prefHeight="26.0" prefWidth="182.0" promptText="entrez une date" style="-fx-background-color: white;" />
+      <HBox alignment="CENTER" layoutX="559.0" layoutY="14.0" />
+      <TextField fx:id="txtNom" layoutX="347.0" layoutY="96.0" promptText="Entrer un Nom" style="-fx-background-color: white;" />
+      <TextField fx:id="txtDescription" layoutX="347.0" layoutY="169.0" promptText="Brève description" style="-fx-background-color: white;" />
+      <TextField fx:id="txtTarif" layoutX="347.0" layoutY="241.0" promptText="Montant" style="-fx-background-color: white;" />
+      <ComboBox fx:id="myChoiceBox" layoutX="703.0" layoutY="168.0" onAction="#selected" prefHeight="29.0" prefWidth="182.0" promptText="References" style="-fx-background-color: white;" />
+      <Button fx:id="ajout" layoutX="505.0" layoutY="330.0" mnemonicParsing="false" onAction="#AddCategorie" prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: grey;" text="Ajouter" />
+      <Button fx:id="modif" layoutX="728.0" layoutY="352.0" mnemonicParsing="false" onAction="#UpdateCategorie" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: grey;" text="Modifier" />
+      <Button fx:id="supprim" layoutX="828.0" layoutY="352.0" mnemonicParsing="false" onAction="#DeleteCategorie" style="-fx-background-color: grey;" text="Supprimer" />
+      <Button fx:id="re" layoutY="368.0" mnemonicParsing="false" onAction="#ret" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: grey;" text="Retour" />
+      <Label layoutX="201.0" layoutY="174.0" text="Description: *" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="94.0" text="Nom_Service: *" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="204.0" layoutY="235.0" text="Tarification: *" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="24.0" text="AJOUTER CATEGORIE" textFill="#00ecff">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="vid" layoutX="-13.0" layoutY="-69.0" mnemonicParsing="false" onAction="#video" />
+      <Label layoutX="543.0" layoutY="94.0" text="Disponibilité :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="550.0" layoutY="168.0" text="Ref_Service :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="612.0" layoutY="239.0" text="Date:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="512.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.Medfly.gui.AjouterRdvController">
+   <children>
+      <ImageView fitHeight="512.0" fitWidth="294.0" pickOnBounds="true">
+         <image>
+            <Image url="@images.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="288.0" layoutY="102.0" text="Nom:" textFill="#280be8">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="288.0" layoutY="169.0" text="Prenom:" textFill="#280be8">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="294.0" layoutY="228.0" text="Date:" textFill="#280be8">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="22.0" text="Bienvenue" textFill="#7282eb">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t1" layoutX="387.0" layoutY="102.0" prefHeight="36.0" prefWidth="212.0" promptText="Saissie ...">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="t2" layoutX="387.0" layoutY="169.0" prefHeight="36.0" prefWidth="212.0" promptText="Saissie ...">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="d1" layoutX="387.0" layoutY="234.0" prefHeight="36.0" prefWidth="212.0" promptText="dd-mm-aaaa" />
+      <Button layoutX="425.0" layoutY="434.0" mnemonicParsing="false" onAction="#res" prefHeight="42.0" prefWidth="122.0" style="-fx-background-color: blue;" text="Reserver" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="425.0" layoutY="380.0" mnemonicParsing="false" onAction="#back" prefHeight="42.0" prefWidth="122.0" style="-fx-background-color: blue;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="c1" layoutX="387.0" layoutY="291.0" prefHeight="76.0" prefWidth="212.0" />
+      <Label layoutX="250.0" layoutY="313.0" text="Commentaire" textFill="#280be8">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

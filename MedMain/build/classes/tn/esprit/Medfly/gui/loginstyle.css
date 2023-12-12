@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9 oct. 2023, 21:42:59
+    Author     : MSI
+*/
+
+.right-form{
+    -fx-background-color:#00cccc;
+}
+.my-tableview{
+	
+}
+.product-card {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-padding: 10;
+}
+/* Button CSS style in your stylesheet */
+.reserver-button {
+    -fx-background-color: blueviolet; /* Button background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 10px 15px; /* Padding */
+    -fx-background-radius: 5; /* Rounded corners */
+}
+
+/* Icon CSS style */
+.reserver-icon {
+    -fx-graphic: url('your-icon.png'); /* Set your icon image file path */
+    -fx-icon-size: 24px; /* Icon size */
+    -fx-icon-spacing: 10px; /* Spacing between icon and text */
+}

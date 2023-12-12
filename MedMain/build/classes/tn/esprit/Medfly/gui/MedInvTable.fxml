@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.Medfly.gui.MedInvTableController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="892.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="240.0" layoutY="27.0" prefHeight="20.0" prefWidth="116.0" text="Invitations reçues">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="Accueilinv" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#Accueilinv" text="Accueil" />
+      <Button fx:id="Ajoutinv" layoutX="462.0" layoutY="25.0" mnemonicParsing="false" onAction="#Ajoutinv" text="Envoyer une invitation" />
+      <Button fx:id="Rechercheinv" layoutX="313.0" layoutY="369.0" mnemonicParsing="false" onAction="#Rechercheinv" text="Chercher " />
+      <TextField fx:id="EmailSpecInv" layoutX="145.0" layoutY="369.0" onAction="#EmailSpecInv" />
+      <Label layoutX="25.0" layoutY="373.0" text="Recherche par mail :" />
+      <TableView fx:id="TableInv" layoutX="79.0" layoutY="64.0" onSort="#TableInv" prefHeight="292.0" prefWidth="355.0">
+         <columns>
+            <TableColumn fx:id="EmailinvColumn" onEditStart="#EmailinvColumn" prefWidth="165.0" text="Email" />
+            <TableColumn fx:id="StatusinvColumn" onEditStart="#StatusinvColumn" prefWidth="189.0" text="Status" />
+         </columns>
+      </TableView>
+      <TextArea editable="false" layoutX="445.0" layoutY="137.0" prefHeight="115.0" prefWidth="141.0" text="Séléctionnez une &#10;invitation dans la table&#10;puis appuyez sur le &#10;bouton ci-dessous &#10;pour l'accepter : " />
+      <Button fx:id="Acceptinv" layoutX="484.0" layoutY="272.0" mnemonicParsing="false" onAction="#Acceptinv" text="Accepter" />
+   </children>
+</AnchorPane>

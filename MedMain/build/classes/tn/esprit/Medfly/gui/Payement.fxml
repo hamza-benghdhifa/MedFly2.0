@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="523.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.Medfmy.gui.PayementController">
+   <children>
+      <ImageView fitHeight="523.0" fitWidth="326.0" pickOnBounds="true">
+         <image>
+            <Image url="@Logo-TIPI.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="372.0" layoutY="50.0" text="Remplire ce Formulaire " textFill="#006f3d">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="118.0" prefHeight="36.0" prefWidth="100.0" text="N°Carte " textFill="#006f3d">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="172.0" prefHeight="36.0" prefWidth="100.0" text="CVC" textFill="#006f3d">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="226.0" prefHeight="36.0" prefWidth="100.0" text="EXpired" textFill="#006f3d">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="279.0" prefHeight="36.0" prefWidth="100.0" text="E_mail" textFill="#006f3d">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t1" layoutX="458.0" layoutY="118.0" prefHeight="36.0" prefWidth="170.0" promptText="12 chiffres" />
+      <TextField fx:id="t2" layoutX="458.0" layoutY="172.0" prefHeight="36.0" prefWidth="170.0" promptText="xxx" />
+      <TextField fx:id="t3" layoutX="458.0" layoutY="226.0" prefHeight="36.0" prefWidth="170.0" promptText="aaaa-mm-dd" />
+      <TextField fx:id="t4" layoutX="458.0" layoutY="279.0" prefHeight="36.0" prefWidth="170.0" promptText="aa@aa.aa">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Button fx:id="b1" onAction="#valider" layoutX="495.0" layoutY="367.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="107.0" style="-fx-background-color: skyblue;" text="Valider">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="b2"  onAction="#back"  layoutX="495.0" layoutY="424.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="107.0" style="-fx-background-color: skyblue;" text="Back">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
